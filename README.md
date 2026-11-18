@@ -11,8 +11,8 @@ Files under `__/auth/` were copied from
 Refresh them occasionally the same way.
 
 `handler` and `iframe` have no extension, and GitHub Pages serves extensionless
-files as downloads. So they live as `handler/index.html` and `iframe/index.html`
-(with absolute `/__/auth/*.js` script paths); Pages redirects `/__/auth/handler?ג€¦`
-to `/__/auth/handler/?ג€¦`.
+files as downloads. So they live as `handler.html` and `iframe.html` (script paths
+made absolute, `/__/auth/*.js`), which Pages serves at the exact extensionless URLs
+(`/__/auth/handler`) with no redirect.
 
 `.nojekyll` is required, otherwise GitHub Pages drops the `__` folder.
