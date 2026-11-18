@@ -10,4 +10,9 @@ Files under `__/auth/` were copied from
 `https://client-manager-97cf2.firebaseapp.com/__/auth/{handler,handler.js,experiments.js,iframe,iframe.js}`.
 Refresh them occasionally the same way.
 
+`handler` and `iframe` have no extension, and GitHub Pages serves extensionless
+files as downloads. So they live as `handler/index.html` and `iframe/index.html`
+(with absolute `/__/auth/*.js` script paths); Pages redirects `/__/auth/handler?…`
+to `/__/auth/handler/?…`.
+
 `.nojekyll` is required, otherwise GitHub Pages drops the `__` folder.
